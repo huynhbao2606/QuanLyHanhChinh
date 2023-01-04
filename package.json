@@ -1,0 +1,22 @@
+{
+  "name": "qlhc",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000Q\u0000u\u0000a\u0000n\u0000L\u0000y\u0000H\u0000a\u0000n\u0000h\u0000C\u0000h\u0000i\u0000n\u0000h\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynhbao2606/QuanLyHanhChinh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huynhbao2606/QuanLyHanhChinh/issues"
+  },
+  "homepage": "https://github.com/huynhbao2606/QuanLyHanhChinh#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

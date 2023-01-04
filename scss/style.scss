@@ -1,0 +1,15 @@
+
+$primary: #212529;
+
+$blue: #0d6efd;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-color: (
+'blue' : $blue
+);
+
+$theme-colors : map-merge($custom-theme-color, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
