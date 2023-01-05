@@ -2,7 +2,7 @@
 include "db.php";
 class phongban extends db
 {
-    public function all_dp()
+    public function all_pb()
     {
         $conn = $this->getDB();
         $stmt = $conn->prepare("SELECT * FROM phongban");
@@ -11,12 +11,12 @@ class phongban extends db
         $conn = null;
         return $stmt->fetchAll();
     }
-    public  function one_dp($id){
+    public  function one_pb($id){
         $conn = $this->getDB();
-        $stmt = $conn->prepare("SELECT * FROM phongban WHERE maphong=$id");
+        $query = "SELECT * FROM phongban where maphong =" . $id;
+        $stmt = $conn -> prepare($query);
         $stmt->execute();
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        $conn = null;
         return $stmt->fetch();
     }
     public function del_pb($id)

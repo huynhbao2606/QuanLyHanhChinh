@@ -1,3 +1,7 @@
+<?php
+include "../models/phongban.php";
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,13 +26,11 @@
             if(isset($_GET['act'])){
                 switch ($_GET['act']){
                     case 'phongban':
-                        include "../models/phongban.php";
                         $pb = new phongban();
-                        $kq = $pb ->all_dp();
+                        $kq = $pb ->all_pb();
                         include "view/phongban.php";
                         break;
                     case'add_pb':
-                        include "../models/phongban.php";
                         $pb = new phongban();
                         if(isset($_POST['luuPB'])){
                             $tenP = $_POST['tenPhong'];
@@ -36,26 +38,24 @@
                             $ghiChu = $_POST['ghiChu'];
                             $pb ->insert_pb($tenP,$tenVT,$ghiChu);
                         }
-                        $kq = $pb ->all_dp();
+                        $kq = $pb ->all_pb();
                         include "view/phongban.php";
                         break;
                     case 'del_pb':
-                        include "../models/phongban.php";
                         $pb = new phongban();
                         if(isset($_GET['id'])){
                             $id = $_GET['id'];
                             $pb->del_pb($id);
                         }
-                        $kq =  $pb -> all_dp();
+                        $kq =  $pb -> all_pb();
                         include "view/phongban.php";
                         break;
                     case'upd_pb':
-                        include "../models/phongban.php";
                         $pb = new phongban();
                         if (isset($_GET['id'])) {
                             $id = $_GET['id'];
-                            $kqOne = $pb->one_dp($id);
-                            $kq = $pb->all_dp();
+                            $kqOne = $pb->one_pb($id);
+                            $kq = $pb->all_pb();
                             include 'view/phongban_upd.php';
                         }
                         if (isset($_POST['maPhong'])) {
@@ -64,10 +64,9 @@
                             $vietTat = $_POST['tenVietTat'];
                             $ghiChu = $_POST['ghiChu'];
                             $pb->upd_pb($maPhong, $tenPhong, $vietTat, $ghiChu);
-                            $kq = $pb->all_dp();
+                            $kq = $pb->all_pb();
                             include 'view/phongban.php';
                         }
-                        break;
                         break;
                     case 'chucvu':
                         include "view/chucvu.php";

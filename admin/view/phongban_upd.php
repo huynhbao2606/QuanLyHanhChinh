@@ -4,6 +4,11 @@
         <h2>Cập Nhật Phòng</h2>
         <hr>
     </header>
+    <?php
+    echo '<pre>';
+    print_r($kqOne);
+    echo '</pre>';
+    ?>
     <form action="index.php?act=upd_pb" method="post">
         <div class="mb-3 row w-75 m-auto">
             <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
@@ -24,7 +29,7 @@
             </div>
         </div>
         <input type="hidden" name="maPhong" value="<?=$kqOne['maphong'];?>">
-        <input name="capNhat" type="submit" class="btn btn-dark" value="Cập Nhật" ">
+        <input name="update" type="submit" class="btn btn-dark" value="Cập Nhật" ">
     </form>
     <hr>
     <header class="text-start">
