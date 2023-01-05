@@ -27,6 +27,18 @@
                         $kq = $pb ->all_dp();
                         include "view/phongban.php";
                         break;
+                    case'add_pb':
+                        include "../models/phongban.php";
+                        $pb = new phongban();
+                        if(isset($_POST['luuPB'])){
+                            $tenP = $_POST['tenPhong'];
+                            $tenVT = $_POST['tenVietTat'];
+                            $ghiChu = $_POST['ghiChu'];
+                            $pb ->insert_pb($tenP,$tenVT,$ghiChu);
+                        }
+                        $kq = $pb ->all_dp();
+                        include "view/phongban.php";
+                        break;
                     case 'del_pb':
                         include "../models/phongban.php";
                         $pb = new phongban();
@@ -40,32 +52,22 @@
                     case'upd_pb':
                         include "../models/phongban.php";
                         $pb = new phongban();
-                        if(isset($_GET['id'])){
+                        if (isset($_GET['id'])) {
                             $id = $_GET['id'];
-                            $kqone = $pb -> one_dp($id);
+                            $kqOne = $pb->one_dp($id);
+                            $kq = $pb->all_dp();
+                            include 'view/phongban_upd.php';
                         }
-                        if(isset($_POST['capNhat'])){
-                            $id = $_POST['maphong'];
-                            $tenp = $_POST['tenPhong'];
-                            $tenVT = $_POST['tenVietTat'];
+                        if (isset($_POST['maPhong'])) {
+                            $maPhong = $_POST['maPhong'];
+                            $tenPhong = $_POST['tenPhong'];
+                            $vietTat = $_POST['tenVietTat'];
                             $ghiChu = $_POST['ghiChu'];
-                            $pb ->upd_pb($tenp,$tenVT,$ghiChu,$id);
+                            $pb->upd_pb($maPhong, $tenPhong, $vietTat, $ghiChu);
+                            $kq = $pb->all_dp();
+                            include 'view/phongban.php';
                         }
-                        $kq = $pb ->all_dp();
-                        include "view/phongban_upd.php";
                         break;
-                    case'insert_pb':
-                        include "../models/phongban.php";
-                        $pb = new phongban();
-                        if(isset($_POST['luuPB'])){
-                            $tenp = $_POST['tenPhong'];
-                            $tenVT = $_POST['tenVietTat'];
-                            $ghiChu = $_POST['ghiChu'];
-                            $pb ->insert_pb($tenp,$tenVT,$ghiChu);
-                        }
-                        $kq = $pb ->all_dp();
-                        include "view/phongban.php";
-
                         break;
                     case 'chucvu':
                         include "view/chucvu.php";

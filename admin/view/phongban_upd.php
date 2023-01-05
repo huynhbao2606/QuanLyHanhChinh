@@ -1,3 +1,4 @@
+
 <div class="text-center col-10">
     <header>
         <h2>Cập Nhật Phòng</h2>
@@ -7,22 +8,22 @@
         <div class="mb-3 row w-75 m-auto">
             <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
             <div class="col-sm-10">
-                <input name="tenPhong" type="text"  class="form-control" id="tenPhong" value="<?=$kqone['tenphong'];  ?>">
+                <input name="tenPhong" type="text"  class="form-control" id="tenPhong" value="<?=$kqOne['tenphong'];?>">
             </div>
         </div>
         <div class="mb-3 row w-75 m-auto">
             <label for="tenVietTat" class="col-sm-2 col-form-label">Tên Viết Tắt</label>
             <div class="col-sm-10">
-                <input name="tenVietTat" type="text" class="form-control" id="tenVietTat" value="<?=$kqone['viettat'];  ?>">
+                <input name="tenVietTat" type="text" class="form-control" id="tenVietTat" value="<?=$kqOne['viettat'];?>">
             </div>
         </div>
         <div class="mb-3 row w-75 m-auto">
             <label for="ghiChu" class="col-sm-2 col-form-label">Ghi Chú</label>
             <div class="col-sm-10">
-                <input name="ghiChu" type="text" class="form-control" id="ghiChu" value="<?=$kqone['ghichu'];?>">
+                <input name="ghiChu" type="text" class="form-control" id="ghiChu" value="<?=$kqOne['ghichu'];?>">
             </div>
         </div>
-        <input type="hidden" name="maphong" value="<?=$kqone['maphong'];?>">
+        <input type="hidden" name="maPhong" value="<?=$kqOne['maphong'];?>">
         <input name="capNhat" type="submit" class="btn btn-dark" value="Cập Nhật" ">
     </form>
     <hr>
@@ -46,7 +47,7 @@
             foreach ($kq as $pb){
                 echo '<tr>
          <td>'.$i.'</td>
-         <td><a href="index.php?act=upd_pb&id">'.$pb['tenphong'].'</a> </td>
+        <td><a class="text-decoration-none fw-bold link-blue" href="index.php?act=upd_pb&id='. $pb['maphong'] . '  ">'.$pb['tenphong'].'</a> </td>
          <td>'.$pb['viettat'].'</td>
          <td>'.$pb['ghichu'].'</td>
          <td><a href="index.php?act=del_pb&id='  .$pb['maphong'] . '" class="link-dark"><i class="fa-solid fa-trash"></i></a></td>' .

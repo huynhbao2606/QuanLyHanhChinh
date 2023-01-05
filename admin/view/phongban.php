@@ -3,7 +3,7 @@
         <h2>Quản Lý Phòng</h2>
         <hr>
     </header>
-    <form action="index.php?act=insert_pb" method="post">
+    <form action="index.php?act=add_pb" method="post">
         <div class="mb-3 row w-75 m-auto">
             <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
             <div class="col-sm-10">

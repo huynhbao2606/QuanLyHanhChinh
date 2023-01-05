@@ -26,10 +26,11 @@ class phongban extends db
         $conn -> exec($sql);
         $conn = null;
     }
-    public function upd_pb($tenP,$vietT,$ghichu,$id){
+    public function upd_pb($tenP,$vietT,$ghiChu,$id){
         $conn = $this->getDB();
-        $stmt = $conn->prepare("UPDATE phongban SET tenphong=?, viettat=?, :ghichu=? WHERE maphong=$id");
-        $stmt->execute([$tenP,$vietT,$ghichu,$id]);
+        $sql = "UPDATE phongban SET tenphong=?,viettat=?,ghichu=? WHERE maphong=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$tenP, $vietT, $ghiChu, $id]);
         $conn = null;
     }
     public function insert_pb($tenP,$vietT,$ghiChu){
