@@ -63,7 +63,7 @@ include "../models/phongban.php";
                             $tenPhong = $_POST['tenPhong'];
                             $vietTat = $_POST['tenVietTat'];
                             $ghiChu = $_POST['ghiChu'];
-                            $pb->upd_pb($maPhong, $tenPhong, $vietTat, $ghiChu);
+                            $pb->upd_pb($tenPhong, $vietTat, $ghiChu,$maPhong);
                             $kq = $pb->all_pb();
                             include 'view/phongban.php';
                         }
