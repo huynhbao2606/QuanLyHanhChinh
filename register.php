@@ -1,5 +1,5 @@
 <?php
-require './models/register.php';
+require 'models/register.php';
 $register = new register();
 if(isset($_POST["register"])){
    $result = $register -> insertUser($_POST['username'],$_POST['password'],$_POST['email']);

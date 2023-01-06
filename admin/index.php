@@ -1,5 +1,6 @@
 <?php
-include "../models/phongban.php";
+
+include "../models/PhongBan_class.php";
 
 ?>
 <!doctype html>
@@ -10,28 +11,28 @@ include "../models/phongban.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quản Lý Hành Chính</title>
     <script src="https://kit.fontawesome.com/1e7fe5f742.js" crossorigin="anonymous"></script>
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div class="container-fluid">
     <div class="row  text-bg-dark bg-gradient ">
-        <?php include_once 'view/header.php';?>
+        <?php include_once 'views/Layout/header.php';?>
     </div>
     <hr>
         <div class="row">
-            <?php include_once 'view/sideleft.php';?>
+            <?php include_once 'views/Layout/sidebar.php';?>
             <?php
             if(isset($_GET['act'])){
                 switch ($_GET['act']){
-                    case 'phongban':
-                        $pb = new phongban();
+                    case 'phongBan':
+                        $pb = new funcPB();
                         $kq = $pb ->all_pb();
-                        include "view/phongban.php";
+                        include "views/PhongBan/index.php";
                         break;
                     case'add_pb':
-                        $pb = new phongban();
+                        $pb = new funcPB();
                         if(isset($_POST['luuPB'])){
                             $tenP = $_POST['tenPhong'];
                             $tenVT = $_POST['tenVietTat'];
@@ -39,24 +40,30 @@ include "../models/phongban.php";
                             $pb ->insert_pb($tenP,$tenVT,$ghiChu);
                         }
                         $kq = $pb ->all_pb();
-                        include "view/phongban.php";
+                        include "views/PhongBan/index.php";
                         break;
                     case 'del_pb':
-                        $pb = new phongban();
-                        if(isset($_GET['id'])){
-                            $id = $_GET['id'];
-                            $pb->del_pb($id);
-                        }
-                        $kq =  $pb -> all_pb();
-                        include "view/phongban.php";
-                        break;
-                    case'upd_pb':
-                        $pb = new phongban();
-                        if (isset($_GET['id'])) {
+                        $pb = new funcPB();
+                        if (isset($_GET['notify'])) {
                             $id = $_GET['id'];
                             $kqOne = $pb->one_pb($id);
                             $kq = $pb->all_pb();
-                            include 'view/phongban_upd.php';
+                            include 'views/PhongBan/index.php';
+                        }
+                        if(isset($_GET['id']) && !isset($_GET['notify'])){
+                            $id = $_GET['id'];
+                            $pb->del_pb($id);
+                            $kq =  $pb -> all_pb();
+                            include "views/PhongBan/index.php";
+                        }
+                        break;
+                    case'upd_pb':
+                        $pb = new funcPB();
+                        if (isset($_GET['id'])){
+                            $id = $_GET['id'];
+                            $kqOne = $pb->one_pb($id);
+                            $kq = $pb->all_pb();
+                            include 'views/PhongBan/PB_Update.php';
                         }
                         if (isset($_POST['maPhong'])) {
                             $maPhong = $_POST['maPhong'];
@@ -65,38 +72,35 @@ include "../models/phongban.php";
                             $ghiChu = $_POST['ghiChu'];
                             $pb->upd_pb($tenPhong, $vietTat, $ghiChu,$maPhong);
                             $kq = $pb->all_pb();
-                            include 'view/phongban.php';
+                            include 'views/PhongBan/index.php';
                         }
                         break;
-                    case 'chucvu':
-                        include "view/chucvu.php";
+                    case 'chucVu':
+                        include "views/chucvu.php";
                         break;
-                    case 'nhanvien':
-                        include "view/nhanvien.php";
+                    case 'nhanVien':
+                        include "views/nhanvien.php";
                         break;
-                    case 'ngayphep':
-                        include "view/ngayphep.php";
+                    case 'ngayPhep':
+                        include "views/ngayphep.php";
                         break;
                     case 'phieunghi':
-                        include "view/phieunghi.php";
+                        include "views/phieunghi.php";
                         break;
-                    case 'thoat':
+                    case 'logout':
                         break;
                     default:
-                        include "view/trangchu.php";
+                        include "views/Layout/home.php";
                         break;
                 }
             }else{
-                include "view/trangchu.php";
+                include "views/Layout/home.php";
             }
-
-
-
             ?>
         </div>
     <hr>
     <div class="row text-bg-dark bg-gradient">
-        <?php include 'view/footer.php'; ?>
+        <?php include 'views/Layout/footer.php'; ?>
     </div>
 </div>
 </body>
