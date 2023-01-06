@@ -9,9 +9,9 @@
         <a class="list-group-item <?php echo isset($_GET['act'] ) && $_GET['act'] == 'logout'  ? 'active' : false ;?>" href="?act=logout"><i class="fa-solid fa-right-from-bracket"></i> Thoát</a>
     </div>
     <hr>
-    <video width="290" height="240">
-        <source src="/media/movie.mp4" type="video/mp4">
-    </video>
+    <div style="width:100%;height:0;padding-bottom:83%;position:relative;">
+        <img src="https://64.media.tumblr.com/tumblr_lm5hpaepoV1qf8l3vo1_400.gif" alt="this slowpoke moves"  width="250" />
+    </div>
 </div>
 
 
