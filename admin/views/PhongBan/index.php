@@ -5,37 +5,36 @@
         <hr>
     </header>
     <form action="index.php?act=add_pb" method="post">
-        <div class="mb-3 row w-75 m-auto">
-            <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
-            <div class="col-sm-10">
-                <input name="tenPhong" type="text"  class="form-control" id="tenPhong"">
+            <div class="mb-3 row w-75 m-auto">
+                <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
+                <div class="col-sm-10">
+                    <input name="tenPhong" type="text"  class="form-control" id="tenPhong" required>
+                </div>
             </div>
-        </div>
         <div class="mb-3 row w-75 m-auto">
             <label for="tenVietTat" class="col-sm-2 col-form-label">Tên Viết Tắt</label>
             <div class="col-sm-10">
-                <input name="tenVietTat" type="text" class="form-control" id="tenVietTat">
+                <input name="tenVietTat" type="text" class="form-control"  id="tenVietTat" required>
             </div>
         </div>
         <div class="mb-3 row w-75 m-auto">
             <label for="ghiChu" class="col-sm-2 col-form-label">Ghi Chú</label>
             <div class="col-sm-10">
-                <input name="ghiChu" type="text" class="form-control" id="ghiChu">
+                <input name="ghiChu" type="text" class="form-control" id="ghiChu" required>
             </div>
         </div>
-            <input name="luuPB" type="submit" class="btn btn-dark" value="Lưu" ">
+            <input name="luuPB" type="submit" class="btn btn-dark" value="Thêm Mới" ">
     </form>
 </div>
-    <div class="row mt-2">
+    <div class="row mt-3">
                 <?php
                 if (isset($_GET['notify'])) {
                     echo '<hr>';
-                    echo '<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"><h4>Bạn có chắc chắn muốn xóa phòng <span class="text-blue">' . $kqOne['tenphong'] . '</span> không ?</h4></div>';
-                    echo '<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"><a class="text-decoration-none bg-danger fw-bold rounded text-white " href="index.php?act=del_pb&id=' . $kqOne['maphong'] . '" >Xác nhận</a></div>';
-                    echo '<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"><a class="text-decoration-none fw-bold rounded bg-dark text-white" href="index.php?act=phongBan" ">Không</a></div>';
+                    echo '<div class="d-flex justify-content-center mb-3"><h4>Bạn có chắc chắn muốn xóa phòng <span class="text-blue">' . $kqOne['tenphong'] . '</span> không ?</h4></div>';
+                    echo '<div class="d-flex justify-content-center mb-3"><a class="text-decoration-none bg-danger fw-bold rounded text-white " href="index.php?act=del_pb&id=' . $kqOne['maphong'] . '" >Xác nhận</a></div>';
+                    echo '<div class="d-flex justify-content-center mb-3"><a class="text-decoration-none fw-bold rounded bg-dark text-white" href="index.php?act=phongban" ">Không</a></div>';
                     echo '<hr>';
-                }
-                ?>
+                } ?>
     </div>
 <div class="row">
     <header class="text-start">

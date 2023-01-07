@@ -7,19 +7,19 @@
             <div class="mb-3 row w-75 m-auto">
                 <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
                 <div class="col-sm-10">
-                    <input name="tenPhong" type="text"  class="form-control" id="tenPhong" value="<?=$kqOne['tenphong'];?>">
+                    <input name="tenPhong" type="text"  class="form-control" id="tenPhong" value="<?=$kqOne['tenphong'];?>" required>
                 </div>
             </div>
             <div class="mb-3 row w-75 m-auto">
                 <label for="tenVietTat" class="col-sm-2 col-form-label">Tên Viết Tắt</label>
                 <div class="col-sm-10">
-                    <input name="tenVietTat" type="text" class="form-control" id="tenVietTat" value="<?=$kqOne['viettat'];?>">
+                    <input name="tenVietTat" type="text" class="form-control" id="tenVietTat" value="<?=$kqOne['viettat'];?>" required>
                 </div>
             </div>
             <div class="mb-3 row w-75 m-auto">
                 <label for="ghiChu" class="col-sm-2 col-form-label">Ghi Chú</label>
                 <div class="col-sm-10">
-                    <input name="ghiChu" type="text" class="form-control" id="ghiChu" value="<?=$kqOne['ghichu'];?>">
+                    <input name="ghiChu" type="text" class="form-control" id="ghiChu" value="<?=$kqOne['ghichu'];?>" required>
                 </div>
             </div>
             <input type="hidden" name="maPhong" value="<?=$kqOne['maphong'];?>">
