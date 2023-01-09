@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ChucVu_class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/NhanVien_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/Anh-Wibu-doi-non-gau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/QuanLyHanhChinh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QuanLyHanhChinh.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02e8da40-fcc8-4bd4-8542-fd7f84766e4e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02e8da40-fcc8-4bd4-8542-fd7f84766e4e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02e8da40-fcc8-4bd4-8542-fd7f84766e4e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02e8da40-fcc8-4bd4-8542-fd7f84766e4e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Layout/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/chucvu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ChucVu/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/nhanvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/movie.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/NhanVien_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/NhanVien_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/PhongBan_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/PhongBan_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +58,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/QuanLyHanhChinh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/TTH/QuanLyHanhChinh&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -124,6 +127,8 @@
       <workItem from="1673131410621" duration="300000" />
       <workItem from="1673131720907" duration="112000" />
       <workItem from="1673131849085" duration="171000" />
+      <workItem from="1673133738715" duration="14000" />
+      <workItem from="1673268627792" duration="6323000" />
     </task>
     <servers />
   </component>

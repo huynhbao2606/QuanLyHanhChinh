@@ -4,7 +4,7 @@
         <h2>Quản Lý Phòng</h2>
         <hr>
     </header>
-    <form action="index.php?act=add_pb" method="post">
+    <div>
             <div class="mb-3 row w-75 m-auto">
                 <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
                 <div class="col-sm-10">
@@ -23,8 +23,10 @@
                 <input name="ghiChu" type="text" class="form-control" id="ghiChu" required>
             </div>
         </div>
-            <input name="luuPB" type="submit" class="btn btn-dark" value="Thêm Mới" ">
-    </form>
+            <button name="luuPB" class="btn btn-dark"  id="btnAdd">
+                Thêm Mới
+            </button>
+    </div>
 </div>
     <div class="row mt-3">
                 <?php
@@ -41,7 +43,7 @@
         <h2>DANH SÁCH PHÒNG</h2>
         <hr>
     </header>
-    <table class="table table-bordered border-dark">
+    <table class="table table-bordered border-dark" id="tablePB">
         <tr class="table-dark">
             <th>#</th>
             <th>Tên phòng</th>
@@ -52,8 +54,8 @@
         </tr>
 <?php
 if(isset($kq) && (count($kq) > 0)){
-    $i = 1;
     foreach ($kq as $pb){
+        $i = 1;
         echo '<tr>
          <td>'.$i.'</td>
          <td class="text-decoration-none fw-bold link-blue">'.$pb['tenphong'].' </td>

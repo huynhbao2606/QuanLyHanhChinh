@@ -28,19 +28,19 @@ class funcNV extends db{
         $conn = null;
     }
 
-    public function update_nv($id, $tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV)
+    public function update_nv($id, $tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV, $hinh)
     {
         $conn = $this->getDB();
-        $query = "UPDATE nhanvien SET tennv = ?, username = ?, password = ?, maphong = ?, gioiTinh = ?, ngaySinh = ?, maCV = ? WHERE nhanvien .manv = ?";
+        $query = "UPDATE nhanvien SET tennv = ?, username = ?,password = ?,maphong = ?,gioitinh = ?,ngaysinh = ?,macv = ?,hinh = ? WHERE nhanvien .manv = ?";
         $stmt = $conn->prepare($query);
-        $stmt->execute([$tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV, $id]);
+        $stmt->execute([$tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV,$hinh,$id ]);
     }
 
-    public function insert_nv($tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV)
+    public function insert_nv($tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV,$hinh)
     {
         $conn = $this->getDB();
-        $query = "INSERT INTO nhanvien (manv, tennv, username, password, maphong, gioitinh, ngaysinh, macv) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?)";
+        $query = "INSERT INTO nhanvien (manv, tennv, username, password, maphong, gioitinh, ngaysinh, macv,hinh) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?,?)";
         $stmt = $conn->prepare($query);
-        $stmt->execute([$tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV]);
+        $stmt->execute([$tenNV, $userName, $password, $maPhong, $gioiTinh, $ngaySinh, $maCV,$hinh]);
     }
 }

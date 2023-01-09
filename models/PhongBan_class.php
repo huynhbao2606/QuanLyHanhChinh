@@ -49,4 +49,13 @@ class funcPB extends db
         return $kq = $stmt->execute([$tenP, $vietT, $ghiChu]);
 
     }
+
+    public function getNextID() {
+        $conn = $this->getDB();
+        $stmt = $conn->prepare('SELECT auto_increment + 1 AS NEXT_ID FROM `information_schema`.`tables` WHERE  table_name = "phongban" AND table_schema = "qlhc"');
+        $stmt->execute();
+        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $conn = null;
+        return $stmt->fetch();
+    }
 }

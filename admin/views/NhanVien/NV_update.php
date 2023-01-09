@@ -4,7 +4,7 @@
             <h2>Cập Nhật Nhân Viên</h2>
             <hr>
         </header>
-        <form action="index.php?act=upd_nv" method="post">
+        <form action="index.php?act=upd_nv" method="post" enctype="multipart/form-data">
             <div class="mb-3 row w-50 m-auto">
                 <label for="tenNv" class="col-sm-2 col-form-label">Tên Nhân Viên</label>
                 <div class="col-sm-10">
@@ -75,6 +75,14 @@
                     </select>
                 </div>
             </div>
+            <div class="mb-3 row w-50 m-auto">
+                <label for="hinhAnh" class="col-sm-2 col-form-label">Hình Ảnh</label>
+                <div class="col-sm-10">
+                    <div class="w-25">
+                        <input name="hinhAnh" type="file" class="form-control" id="hinhAnh">
+                    </div>
+                </div>
+            </div>
             <input type="hidden" name="maNV" value="<?=$kqOne['manv'];?>">
             <input name="luuNV" type="submit" class="btn btn-dark" value="Thêm Mới">
         </form>
@@ -100,6 +108,7 @@
                 <th>STT</th>
                 <th>Mã Nhân Viên</th>
                 <th>Tên Nhân Viên</th>
+                <th>Hình</th>
                 <th>Tài Khoản</th>
                 <th>Giới Tính</th>
                 <th>Ngày Sinh</th>
@@ -116,6 +125,7 @@
                     <td>'.$i.'</td>
                     <td>'.$nv['manv'].'</td>
                     <td class="fw-bold text-blue">'.$nv['tennv'].'</td> 
+                    <td><img src="../files/'.$nv['hinh'].'" alt="Lỗi" width="25" height=25"></td>
                     <td>'.$nv['username'].'</td>';
                     if($nv['gioitinh'] == 1){
                         echo '<td>Nam</td>';

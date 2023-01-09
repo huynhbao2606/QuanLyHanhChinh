@@ -19,6 +19,7 @@ include "../models/ChucVu_class.php";
           rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -125,7 +126,12 @@ include "../models/ChucVu_class.php";
                             $ngaySinh = $_POST['ngaySinh'];
                             $maPhong = $_POST['maPhong'];
                             $chucVu = $_POST['chucVu'];
-                            $nv ->insert_nv($tenNV,$taiKhoan,$matKhau,$maPhong,$gioiTinh,$ngaySinh,$chucVu);
+                            if(!empty($_FILES['hinhAnh']['name'])){
+                                $tenFile = $_FILES['hinhAnh']['name'];
+                                $tmp = $_FILES['hinhAnh']['tmp_name'];
+                                move_uploaded_file($tmp,'../files/'.$tenFile);
+                            }
+                            $nv ->insert_nv($tenNV,$taiKhoan,$matKhau,$maPhong,$gioiTinh,$ngaySinh,$chucVu,$tenFile);
                         }
                         $kq = $nv ->all_nv();
                         include "views/NhanVien/index.php";
@@ -162,7 +168,12 @@ include "../models/ChucVu_class.php";
                             $ngaySinh = $_POST['ngaySinh'];
                             $maPhong = $_POST['maPhong'];
                             $chucVu = $_POST['chucVu'];
-                            $nv->update_nv($maNV,$tenNV,$taiKhoan,$matKhau,$maPhong,$gioiTinh,$ngaySinh,$chucVu);
+                            if(!empty($_FILES['hinhAnh']['name'])){
+                                $tenFile = $_FILES['hinhAnh']['name'];
+                                $tmp = $_FILES['hinhAnh']['tmp_name'];
+                                move_uploaded_file($tmp,'../files/'.$tenFile);
+                            }
+                            $nv->update_nv($maNV,$tenNV,$taiKhoan,$matKhau,$maPhong,$gioiTinh,$ngaySinh,$chucVu,$tenFile);
                             $kq = $nv->all_nv();
                             include 'views/NhanVien/index.php';
                         }
@@ -187,5 +198,8 @@ include "../models/ChucVu_class.php";
         <?php include 'views/Layout/footer.php'; ?>
     </div>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
