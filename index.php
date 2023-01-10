@@ -8,11 +8,13 @@ if(isset($_POST['login'])){
     $password = $_POST['password'];
     $role = $user->loginUser($username,$password);
     $_SESSION['role'] = $role;
-    if($role == 1){
+    if($role == 1) {
         header('location:admin/index.php');
         exit();
     }elseif($username == "" || $password ==""){
         $loginNo = 'Vui Lòng Nhập Tài Khoản Và Mật Khẩu';
+    }if($role){
+        $loginFail = 'Chỉ Có Admin Mới Có Quyền Đăng Nhập';
     }
     else
         $loginErr = 'Tài Khoản Hoặc Mật Khẩu Sai';
@@ -67,6 +69,11 @@ if(isset($_POST['login'])){
                                         if (isset($loginNo)) {
                                             echo '<div class="text-danger mb-4">';
                                             echo '<h6 class="fw-bold"> <i class="fa-solid fa-circle-exclamation"></i> ' . $loginNo . '</h6>';
+                                            echo '</div>';
+                                        }
+                                        if (isset($loginFail)) {
+                                            echo '<div class="text-danger mb-4">';
+                                            echo '<h6 class="fw-bold"> <i class="fa-solid fa-circle-exclamation"></i> ' . $loginFail . '</h6>';
                                             echo '</div>';
                                         }
                                         ?>

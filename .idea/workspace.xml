@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/files/wibu.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/ChucVu/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ChucVu/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Layout/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ChucVu_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/ChucVu_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/NhanVien_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/NhanVien_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/PhongBan_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/PhongBan_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DataBase_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/logout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/register.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DangNhap_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" />
-    </list>
+    <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="Update Login Xóa Linh Tinh" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -169,12 +151,31 @@
       <workItem from="1673304141946" duration="165000" />
       <workItem from="1673304317182" duration="1168000" />
       <workItem from="1673305674262" duration="544000" />
-      <workItem from="1673306386837" duration="3069000" />
+      <workItem from="1673306386837" duration="3380000" />
     </task>
+    <task id="LOCAL-00001" summary="Update Login Xóa Linh Tinh">
+      <created>1673309711958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673309711958</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -189,6 +190,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update Login Xóa Linh Tinh" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Login Xóa Linh Tinh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
