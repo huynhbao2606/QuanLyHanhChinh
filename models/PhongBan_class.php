@@ -1,9 +1,12 @@
 <?php
 
-include "db.php";
+include "DataBase_class.php";
 
 class funcPB extends db
 {
+    public function __construct()
+    {
+    }
     public function all_pb(): false|array
     {
         $conn = $this->getDB();

@@ -1,5 +1,8 @@
 <?php
 class funcNV extends db{
+    public function __construct()
+    {
+    }
     public function all_nv(): false|array
     {
         $conn = $this->getDB();

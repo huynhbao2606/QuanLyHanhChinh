@@ -1,33 +1,32 @@
 <div class="text-center col-10">
     <div class="row">
-    <header>
-        <h2>Quản Lý Phòng</h2>
-        <hr>
-    </header>
-    <div>
-            <div class="mb-3 row w-75 m-auto">
-                <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
-                <div class="col-sm-10">
-                    <input name="tenPhong" type="text"  class="form-control" id="tenPhong" required>
-                </div>
+        <header>
+            <h2>Quản Lý Phòng</h2>
+            <hr>
+        </header>
+        <form action="index.php?act=add_pb" method="post">
+        <div class="mb-3 row w-75 m-auto">
+            <label for="tenPhong" class="col-sm-2 col-form-label">Tên Phòng</label>
+            <div class="col-sm-10">
+                <input name="tenPhong" type="text"  class="form-control" id="tenPhong" required>
             </div>
+        </div>
         <div class="mb-3 row w-75 m-auto">
             <label for="tenVietTat" class="col-sm-2 col-form-label">Tên Viết Tắt</label>
             <div class="col-sm-10">
-                <input name="tenVietTat" type="text" class="form-control"  id="tenVietTat" required>
+                <input name="tenVietTat" type="text" class="form-control" id="tenVietTat" required>
             </div>
         </div>
         <div class="mb-3 row w-75 m-auto">
             <label for="ghiChu" class="col-sm-2 col-form-label">Ghi Chú</label>
             <div class="col-sm-10">
-                <input name="ghiChu" type="text" class="form-control" id="ghiChu" required>
+                <input name="ghiChu" type="text" class="form-control" id="ghiChu"  required>
             </div>
         </div>
-            <button name="luuPB" class="btn btn-dark"  id="btnAdd">
-                Thêm Mới
-            </button>
+            <input name="luuPB" type="submit" class="btn btn-dark" value="Thêm Phòng">
+        </form>
     </div>
-</div>
+<hr>
     <div class="row mt-3">
                 <?php
                 if (isset($_GET['notify'])) {

@@ -5,21 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/Anh-Wibu-doi-non-gau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/QuanLyHanhChinh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QuanLyHanhChinh.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/wibu.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/api.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/ChucVu/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ChucVu/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/Layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Layout/sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ChucVu_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/ChucVu_class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/NhanVien_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/NhanVien_class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/PhongBan_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/PhongBan_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DataBase_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DangNhap_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +66,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/TTH/QuanLyHanhChinh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/QuanLyHanhChinh&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -74,6 +82,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\DangKy" />
       <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\ChucVu" />
       <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\NhanVien" />
       <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\PhongBan" />
@@ -128,7 +137,39 @@
       <workItem from="1673131720907" duration="112000" />
       <workItem from="1673131849085" duration="171000" />
       <workItem from="1673133738715" duration="14000" />
-      <workItem from="1673268627792" duration="6323000" />
+      <workItem from="1673268627792" duration="10223000" />
+      <workItem from="1673294337299" duration="3000" />
+      <workItem from="1673294351783" duration="10000" />
+      <workItem from="1673294416037" duration="32000" />
+      <workItem from="1673294453614" duration="42000" />
+      <workItem from="1673294506977" duration="56000" />
+      <workItem from="1673294668224" duration="23000" />
+      <workItem from="1673294697671" duration="89000" />
+      <workItem from="1673294951517" duration="14000" />
+      <workItem from="1673294994624" duration="979000" />
+      <workItem from="1673295999655" duration="13000" />
+      <workItem from="1673296041936" duration="811000" />
+      <workItem from="1673296875070" duration="288000" />
+      <workItem from="1673297183818" duration="18000" />
+      <workItem from="1673297208108" duration="49000" />
+      <workItem from="1673297263801" duration="2000" />
+      <workItem from="1673297271275" duration="1711000" />
+      <workItem from="1673299002021" duration="53000" />
+      <workItem from="1673299068884" duration="603000" />
+      <workItem from="1673299701408" duration="35000" />
+      <workItem from="1673299747024" duration="760000" />
+      <workItem from="1673300544971" duration="493000" />
+      <workItem from="1673301057217" duration="898000" />
+      <workItem from="1673301977502" duration="379000" />
+      <workItem from="1673302370428" duration="448000" />
+      <workItem from="1673302841567" duration="342000" />
+      <workItem from="1673303193715" duration="485000" />
+      <workItem from="1673303696759" duration="6000" />
+      <workItem from="1673303717801" duration="404000" />
+      <workItem from="1673304141946" duration="165000" />
+      <workItem from="1673304317182" duration="1168000" />
+      <workItem from="1673305674262" duration="544000" />
+      <workItem from="1673306386837" duration="3069000" />
     </task>
     <servers />
   </component>
@@ -148,5 +189,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/models/ChucVu_class.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -71,12 +71,12 @@
             <div class="mb-3 row w-50 m-auto">
                 <label for="hinhAnh" class="col-sm-2 col-form-label">Hình Ảnh</label>
                 <div class="col-sm-10">
-                    <div class="w-25">
-                        <input name="hinhAnh" type="file" class="form-control" id="hinhAnh">
+                    <div class="w-50">
+                        <input name="hinhAnh" value="Thêm Hình Ảnh..." type="file" class="form-control" id="hinhAnh">
                     </div>
                 </div>
             </div>
-                <input name="luuNV" type="submit" class="btn btn-dark" value="Thêm Mới" ">
+                <input name="luuNV" type="submit" class="btn btn-dark" value="Thêm Nhân Viên">
         </form>
     </div>
     <div class="row mt-3">
@@ -117,7 +117,7 @@
                     <td>'.$i.'</td>
                     <td>'.$nv['manv'].'</td>
                     <td class="fw-bold text-blue">'.$nv['tennv'].'</td> 
-                    <td><img src="../files/'.$nv['hinh'].'" alt="Lỗi" width="25" height=25"></td>
+                    <td><img src="../files/'.$nv['hinh'].'" alt="Lỗi" width="30" height="30""></td>
                     <td>'.$nv['username'].'</td>';
                     if($nv['gioitinh'] == 1){
                     echo '<td>Nam</td>';

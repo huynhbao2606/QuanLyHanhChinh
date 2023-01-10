@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="mb-3">
-            <input name="luuCV" type="submit" class="btn btn-dark" value="Thêm">
+            <input name="luuCV" type="submit" class="btn btn-dark" value="Thêm Chức Vụ">
         </div>
     </form>
     </div>

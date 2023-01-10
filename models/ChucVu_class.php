@@ -2,8 +2,9 @@
 
 class FuncCV extends db
 {
-
-
+    public function __construct()
+    {
+    }
     public function Insert_CV($chucVu)
     {
         $conn = $this->getDB();

@@ -1,5 +1,6 @@
 <div class="text-center col-10">
-    <div class="row"><header>
+    <div class="row">
+        <header>
             <h2>Cập Nhật Phòng</h2>
             <hr>
         </header>
