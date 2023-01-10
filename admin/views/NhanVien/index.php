@@ -77,6 +77,7 @@
                 </div>
             </div>
                 <input name="luuNV" type="submit" class="btn btn-dark" value="Thêm Nhân Viên">
+                <input type="reset" class="btn btn-dark" value="Reset">
         </form>
     </div>
     <div class="row mt-3">

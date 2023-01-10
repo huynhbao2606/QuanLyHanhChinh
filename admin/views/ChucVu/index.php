@@ -14,6 +14,7 @@
         </div>
         <div class="mb-3">
             <input name="luuCV" type="submit" class="btn btn-dark" value="Thêm Chức Vụ">
+            <input type="reset" class="btn btn-dark" value="Reset">
         </div>
     </form>
     </div>

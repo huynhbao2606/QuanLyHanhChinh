@@ -85,6 +85,7 @@
             </div>
             <input type="hidden" name="maNV" value="<?=$kqOne['manv'];?>">
             <input name="luuNV" type="submit" class="btn btn-dark" value="Cập Nhật">
+            <input type="reset" class="btn btn-dark" value="Reset">
         </form>
     </div>
     <div class="row mt-3">

@@ -200,11 +200,8 @@ include "../models/ChucVu_class.php";
                 exit();
             }
             ?>
+            <hr>
         </div>
-    <hr>
-    <div class="row text-bg-dark bg-gradient">
-        <?php include 'views/Layout/footer.php'; ?>
-    </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>

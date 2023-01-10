@@ -11,14 +11,13 @@ if(isset($_POST['login'])){
     if($role == 1) {
         header('location:admin/index.php');
         exit();
-    }elseif($username == "" || $password ==""){
-        $loginNo = 'Vui Lòng Nhập Tài Khoản Và Mật Khẩu';
     }if($role){
         $loginFail = 'Chỉ Có Admin Mới Có Quyền Đăng Nhập';
+    }elseif($username == "" || $password ==""){
+        $loginNo = 'Vui Lòng Nhập Tài Khoản Và Mật Khẩu';
     }
     else
         $loginErr = 'Tài Khoản Hoặc Mật Khẩu Sai';
-
 }
 ?>
 <!doctype html>

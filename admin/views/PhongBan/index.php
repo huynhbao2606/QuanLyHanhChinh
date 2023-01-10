@@ -24,6 +24,7 @@
             </div>
         </div>
             <input name="luuPB" type="submit" class="btn btn-dark" value="Thêm Phòng">
+            <input type="reset" class="btn btn-dark" value="Reset">
         </form>
     </div>
 <hr>

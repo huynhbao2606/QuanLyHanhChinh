@@ -24,7 +24,8 @@
                 </div>
             </div>
             <input type="hidden" name="maPhong" value="<?=$kqOne['maphong'];?>">
-            <input name="update" type="submit" class="btn btn-dark" value="Cập Nhật" ">
+            <input name="update" type="submit" class="btn btn-dark" value="Cập Nhật">
+            <input type="reset" class="btn btn-dark" value="Reset">
         </form>
     </div>
     <hr>
