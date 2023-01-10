@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="Update Thông Báo Đăng Nhập">
-      <change afterPath="$PROJECT_DIR$/files/wa.jpg" afterDir="false" />
+    <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="Update Linh Tinh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/ChucVu/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ChucVu/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Layout/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Layout/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/PB_Update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/PhongBan/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/PhongBan/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/Layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Layout/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +161,7 @@
       <workItem from="1673312328686" duration="230000" />
       <workItem from="1673312801486" duration="302000" />
       <workItem from="1673313126392" duration="8000" />
+      <workItem from="1673313163651" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="Update Login Xóa Linh Tinh">
       <created>1673309711958</created>
@@ -184,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673310045431</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Linh Tinh">
+      <created>1673313306559</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673313306559</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +216,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update Login Xóa Linh Tinh" />
     <MESSAGE value="Update Thông Báo Đăng Nhập" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Thông Báo Đăng Nhập" />
+    <MESSAGE value="Update Linh Tinh" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Linh Tinh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
