@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="Update Linh Tinh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/DangNhap_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DangNhap_class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +164,14 @@
       <workItem from="1673312801486" duration="302000" />
       <workItem from="1673313126392" duration="8000" />
       <workItem from="1673313163651" duration="208000" />
+      <workItem from="1673313393977" duration="104000" />
+      <workItem from="1673314085869" duration="827000" />
+      <workItem from="1673314968055" duration="328000" />
+      <workItem from="1673315309908" duration="21000" />
+      <workItem from="1673315565496" duration="8000" />
+      <workItem from="1673315587114" duration="142000" />
+      <workItem from="1673315739375" duration="45000" />
+      <workItem from="1673315789845" duration="437000" />
     </task>
     <task id="LOCAL-00001" summary="Update Login Xóa Linh Tinh">
       <created>1673309711958</created>
@@ -184,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673313306559</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Linh Tinh">
+      <created>1673313466391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673313466391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

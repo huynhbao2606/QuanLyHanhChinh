@@ -129,8 +129,8 @@ include "../models/ChucVu_class.php";
                                     $tenFile = $_FILES['hinhAnh']['name'];
                                     $tmp = $_FILES['hinhAnh']['tmp_name'];
                                     move_uploaded_file($tmp, '../files/' . $tenFile);
+                                    $nv->insert_nv($tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu, $tenFile);
                                 }
-                                $nv->insert_nv($tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu, $tenFile);
                             }
                             $kq = $nv->all_nv();
                             include "views/NhanVien/index.php";
@@ -171,8 +171,8 @@ include "../models/ChucVu_class.php";
                                     $tenFile = $_FILES['hinhAnh']['name'];
                                     $tmp = $_FILES['hinhAnh']['tmp_name'];
                                     move_uploaded_file($tmp, '../files/' . $tenFile);
+                                    $nv->update_nv($maNV, $tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu,$tenFile);
                                 }
-                                $nv->update_nv($maNV, $tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu,$tenFile);
                                 $kq = $nv->all_nv();
                                 include 'views/NhanVien/index.php';
                             }

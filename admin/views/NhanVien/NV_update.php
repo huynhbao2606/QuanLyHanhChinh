@@ -20,7 +20,7 @@
             <div class="mb-3 row w-50 m-auto">
                 <label for="matKhau" class="col-sm-2 col-form-label">Mật Khẩu</label>
                 <div class="col-sm-10">
-                    <input name="matKhau" type="text" class="form-control" id="matKhau" value="<?=$kqOne['password'];?>"required>
+                    <input name="matKhau" type="text" class="form-control" id="matKhau" value="<?=$kqOne['password'];?>" required>
                 </div>
             </div>
             <div class="mb-3 row w-50 m-auto">
