@@ -88,16 +88,15 @@
             <input type="reset" class="btn btn-dark" value="Reset">
         </form>
     </div>
-    <div class="row mt-3">
-        <?php
-        if (isset($_GET['notify'])) {
-            echo '<hr>';
-            echo '<div class="d-flex justify-content-center mb-3"><h4>Bạn có chắc chắn muốn xóa nhân viên <span class="text-blue">' . $kqOne['tennv'] . '</span> không ?</h4></div>';
-            echo '<div class="d-flex justify-content-center mb-3"><a class="text-decoration-none bg-danger fw-bold rounded text-white " href="index.php?act=del_nv&id=' . $kqOne['manv'] . '" >Xác nhận</a></div>';
-            echo '<div class="d-flex justify-content-center mb-3"><a class="text-decoration-none fw-bold rounded bg-dark text-white" href="index.php?act=nhanvien" ">Không</a></div>';
-            echo '<hr>';
-        } ?>
-    </div>
+    <?php
+    if (isset($_GET['notify'])) {
+        echo '<div class="row mt-3">';
+        echo '<hr>';
+        echo '<div class="d-flex justify-content-center mb-3"><h4>Bạn có chắc chắn muốn xóa nhân viên <span class="text-blue">' . $kqOne['tennv'] . '</span> không ?</h4></div>';
+        echo '<div class="d-flex justify-content-center mb-3"><a class="text-decoration-none bg-danger fw-bold rounded text-white " href="index.php?act=del_nv&id=' . $kqOne['manv'] . '" >Xác nhận</a></div>';
+        echo '<div class="d-flex justify-content-center mb-3"><a class="text-decoration-none fw-bold rounded bg-dark text-white" href="index.php?act=nhanvien" ">Không</a></div>';
+        echo '</div>';
+    } ?>
     <hr>
     <div class="row mt-3">
         <header class="text-start">
@@ -126,7 +125,7 @@
                     <td>'.$i.'</td>
                     <td>'.$nv['manv'].'</td>
                     <td class="fw-bold text-blue">'.$nv['tennv'].'</td> 
-                    <td><img src="../files/'.$nv['hinh'].'" alt="Lỗi" width="25" height=25"></td>
+                    <td><img src="../files/'.$nv['hinh'].'" alt="Lỗi" width="30" height="30"></td>
                     <td>'.$nv['username'].'</td>';
                     if($nv['gioitinh'] == 1){
                         echo '<td>Nam</td>';

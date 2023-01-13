@@ -125,12 +125,14 @@ include "../models/ChucVu_class.php";
                                 $ngaySinh = $_POST['ngaySinh'];
                                 $maPhong = $_POST['maPhong'];
                                 $chucVu = $_POST['chucVu'];
+                                $tenFile = "";
                                 if (!empty($_FILES['hinhAnh']['name'])) {
                                     $tenFile = $_FILES['hinhAnh']['name'];
                                     $tmp = $_FILES['hinhAnh']['tmp_name'];
                                     move_uploaded_file($tmp, '../files/' . $tenFile);
-                                    $nv->insert_nv($tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu, $tenFile);
+
                                 }
+                                $nv->insert_nv($tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu, $tenFile);
                             }
                             $kq = $nv->all_nv();
                             include "views/NhanVien/index.php";
@@ -167,18 +169,21 @@ include "../models/ChucVu_class.php";
                                 $ngaySinh = $_POST['ngaySinh'];
                                 $maPhong = $_POST['maPhong'];
                                 $chucVu = $_POST['chucVu'];
+                                $tenFile = "";
                                 if (!empty($_FILES['hinhAnh']['name'])) {
                                     $tenFile = $_FILES['hinhAnh']['name'];
                                     $tmp = $_FILES['hinhAnh']['tmp_name'];
                                     move_uploaded_file($tmp, '../files/' . $tenFile);
-                                    $nv->update_nv($maNV, $tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu,$tenFile);
                                 }
-                                $kq = $nv->all_nv();
-                                include 'views/NhanVien/index.php';
+                                $nv->update_nv($maNV, $tenNV, $taiKhoan, $matKhau, $maPhong, $gioiTinh, $ngaySinh, $chucVu,$tenFile);
                             }
+                            $kq = $nv->all_nv();
+                            include 'views/NhanVien/index.php';
                             break;
                         case 'ngayphep':
-                            include "views/ngayphep.php";
+//                            $np = new funcNP();
+//                            $kq = $np->all_np();
+                            include "views/NgayPhep/index.php";
                             break;
                         case 'phieunghi':
                             include "views/phieunghi.php";

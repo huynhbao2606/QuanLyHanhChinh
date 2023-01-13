@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0565ff6b-dc06-416f-8981-d27f06502c49" name="Changes" comment="Update Linh Tinh">
+      <change afterPath="$PROJECT_DIR$/admin/views/Data/books.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/Data/readxml.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/NgayPhep/NgayPhep_Show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/Raid_970x90_ENG2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/NgayPhep_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/NV_update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DangNhap_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DangNhap_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/NhanVien/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NhanVien/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/ngayphep.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/NgayPhep/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +61,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/xjenk/OneDrive/Máy tính/HeroBiz&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/QuanLyHanhChinh&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -70,10 +78,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\NgayPhep" />
+      <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\Data" />
       <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\DangKy" />
       <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\ChucVu" />
       <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\NhanVien" />
-      <recent name="C:\xampp\htdocs\QuanLyHanhChinh\admin\views\PhongBan" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -172,6 +181,11 @@
       <workItem from="1673315587114" duration="142000" />
       <workItem from="1673315739375" duration="45000" />
       <workItem from="1673315789845" duration="437000" />
+      <workItem from="1673321107357" duration="516000" />
+      <workItem from="1673321864907" duration="15000" />
+      <workItem from="1673441686265" duration="6490000" />
+      <workItem from="1673611397265" duration="1532000" />
+      <workItem from="1673612975172" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="Update Login Xóa Linh Tinh">
       <created>1673309711958</created>
